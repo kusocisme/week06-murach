@@ -1,25 +1,31 @@
-<%@page contentType="text/html" pageEncoding="utf-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:import url="/includes/header.html" />
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Murach's Java Servlets and JSP</title>
+    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+</head>
+<body>
 
-<h1>Join our email list</h1>
-<p>To join our email list, enter your name and
-   email address below.</p>
+<h1>List of albums</h1>
 
-<c:if test="${message != null}">
-    <p><i>${message}</i></p>
-</c:if>
+<p>
+<a href="download?action=checkUser&amp;productCode=8601">
+    86 (the band) - True Life Songs and Pictures
+</a><br>
 
-<form action="emailList" method="post">
-    <input type="hidden" name="action" value="add">        
-    <label class="pad_top">Email:</label>
-    <input type="email" name="email" value="${user.email}"><br>
-    <label class="pad_top">First Name:</label>
-    <input type="text" name="firstName" value="${user.firstName}"><br>
-    <label class="pad_top">Last Name:</label>
-    <input type="text" name="lastName" value="${user.lastName}"><br>        
-    <label>&nbsp;</label>
-    <input type="submit" value="Join Now" class="margin_left">
-</form>
+<a href="download?action=checkUser&amp;productCode=pf01">
+    Paddlefoot - The First CD
+</a><br>
 
-<c:import url="/includes/footer.jsp" />
+<a href="download?action=checkUser&amp;productCode=pf02">
+    Paddlefoot - The Second CD
+</a><br>
+
+<a href="download?action=checkUser&amp;productCode=jr01">
+    Joe Rut - Genuine Wood Grained Finish
+</a>
+</p>
+
+</body>
+</html>

@@ -22,7 +22,6 @@ public class User implements Serializable {
 
     public String getFirstName() {
         return firstName;
-        //hehe
     }
 
     public void setFirstName(String firstName) {
