@@ -2,7 +2,7 @@ package murach.business;
 
 import java.io.Serializable;
 import java.text.NumberFormat;
-//kusocisme
+//iu kusocisme
 public class Product implements Serializable
 {
     private String code;
